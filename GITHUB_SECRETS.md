@@ -1,0 +1,58 @@
+# GitHub Secrets Configuration
+
+Untuk menggunakan CI/CD workflow di GitHub Actions, Anda perlu mengatur beberapa secrets. Ikuti langkah-langkah berikut:
+
+## Langkah-Langkah Setup
+
+### 1. Buka Repository Settings
+- Pergi ke repository GitHub Anda
+- Klik tab **Settings**
+- Di sidebar kiri, klik **Secrets and variables** → **Actions**
+
+### 2. Tambahkan Secrets Berikut
+
+#### Secret 1: KEYSTORE_BASE64
+- **Name**: `KEYSTORE_BASE64`
+- **Value**: Base64 encoded keystore file (lihat di bawah)
+
+#### Secret 2: KEYSTORE_PASSWORD
+- **Name**: `KEYSTORE_PASSWORD`
+- **Value**: `AutoPlaneMode123!`
+
+#### Secret 3: KEY_ALIAS
+- **Name**: `KEY_ALIAS`
+- **Value**: `autoplanemode`
+
+#### Secret 4: KEY_PASSWORD
+- **Name**: `KEY_PASSWORD`
+- **Value**: `AutoPlaneMode123!`
+
+## Keystore Base64 Value
+
+Gunakan nilai berikut untuk secret `KEYSTORE_BASE64`:
+
+```
+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
+```
+
+## Cara Menambahkan Secret
+
+1. Klik tombol **New repository secret**
+2. Masukkan **Name** dari secret
+3. Masukkan **Value** (paste value yang sesuai)
+4. Klik **Add secret**
+
+## Verifikasi
+
+Setelah menambahkan semua secrets, Anda dapat memverifikasi di halaman Secrets:
+- Semua 4 secrets harus terlihat di list
+- Secrets akan di-mask dan tidak bisa dilihat isinya
+
+## Penggunaan di Workflow
+
+Secrets akan digunakan di GitHub Actions workflow untuk:
+- Decode keystore dari base64
+- Sign APK dengan keystore
+- Menggunakan password dan alias untuk signing
+
+Workflow akan otomatis menggunakan secrets ini saat build APK release.
