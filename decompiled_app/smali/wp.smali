@@ -1,0 +1,6 @@
+.class public interface abstract Lwp;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lrp;
