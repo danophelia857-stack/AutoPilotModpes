@@ -1,3 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AutoPilot Modpes</string>
+    <string name="app_name">AutoPilot ModPes</string>
+    <string name="notification_channel_name">AutoPilot Service</string>
+    <string name="notification_channel_desc">Service untuk auto toggle airplane mode</string>
+    <string name="notification_title">AutoPilot Berjalan</string>
+    <string name="notification_text">Mencari IP yang sesuai...</string>
+    <string name="notification_success">IP Target Ditemukan!</string>
 </resources>
