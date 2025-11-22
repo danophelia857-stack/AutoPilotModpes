@@ -23,6 +23,14 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
 
+    - name: Accept Android SDK licenses
+      run: |
+        mkdir -p "$ANDROID_HOME/licenses"
+        echo "8933bad161af4178b11852feb1004180178faaee" > "$ANDROID_HOME/licenses/android-sdk-license"
+        echo "84831b9409646a918e3057323426c9c12890d473" > "$ANDROID_HOME/licenses/android-sdk-preview-license"
+        echo "d975f7393a7cb6768700bc5164aa35b9269b4a8d" > "$ANDROID_HOME/licenses/android-googletv-license"
+        echo "33b6a2b6ccb463865108c38a10208c023b123927" > "$ANDROID_HOME/licenses/google-gdk-license"
+
     - name: Build debug APK
       run: ./gradlew assembleDebug
 
